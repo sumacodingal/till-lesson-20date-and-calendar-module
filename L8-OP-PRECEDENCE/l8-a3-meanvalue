@@ -1,0 +1,19 @@
+numbers = [4, 6, 8]
+mean = sum(numbers) / len(numbers)
+print(mean)
+
+
+mean1=38
+wrong_number=36
+correct_number=56
+total_number=40
+sum=mean1 * total_number
+print("the sum of 40 numbers is" , sum)
+#to calculate the new mean after removing the wrong number
+new_sum=sum - wrong_number
+print("the new sum after removing the wrong number is", new_sum)
+
+num2=sum-((wrong_number)-(correct_number))
+print("the new sum after adding the correct number is", num2)
+new_mean=num2/total_number  
+print("the new mean after replacing the wrong number with correct number is", new_mean)

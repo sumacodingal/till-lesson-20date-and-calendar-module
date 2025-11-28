@@ -1,0 +1,9 @@
+print ("Enter a number(numerator)")
+numnerator=int(input())
+print ("Enter a number(denominator)")
+numdenominator=int(input())
+if numnerator % numdenominator==0:
+    print(f"{numnerator} is divisible by {numdenominator}")
+else:
+    print(f"{numnerator} is not divisible by {numdenominator}")
+    

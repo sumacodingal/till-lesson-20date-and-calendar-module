@@ -1,0 +1,63 @@
+
+import random
+
+def generate_easy():
+    # simple + and * with parentheses
+    a, b, c = random.randint(1,9), random.randint(1,9), random.randint(1,9)
+    expr = f"({a} + {b}) * {c}"
+    return expr
+
+def generate_medium():
+    # mix of +, *, /
+    a, b, c, d = [random.randint(2,10) for _ in range(4)]
+    exprs = [
+        f"{a} + ({b} * {c}) / {d}",
+        f"({a} + {b}) * ({c} / {d})",
+        f"({a} * {b}) + ({c} / {d})",
+        f"({a} + {b}) / ({c} + {d})"
+    ]
+    return random.choice(exprs)
+
+def generate_hard():
+    # nested parentheses
+    a, b, c, d = [random.randint(1,10) for _ in range(4)]
+    exprs = [
+        f"(({a} + {b}) * {c}) / {d}",
+        f"({a} + ({b} * ({c} + {d})))",
+        f"({a} * ({b} + ({c} / {d})))",
+        f"(({a} + {b}) * ({c} + {d})) / {a}"
+    ]
+    return random.choice(exprs)
+
+def practice():
+    print("🎯 PEMDAS Practice - Level 2")
+    score = 0
+    total = 5
+
+    for i in range(1, total + 1):
+        if i <= 2:
+            expr = generate_easy()
+        elif i <= 4:
+            expr = generate_medium()
+        else:
+            expr = generate_hard()
+
+        print(f"\nQ{i}: Solve {expr}")
+        correct = round(eval(expr), 2)
+        try:
+            ans = float(input("Your answer: "))
+        except ValueError:
+            print("⚠️ Enter numbers only.")
+            continue
+
+        if abs(ans - correct) < 0.01:
+            print("✅ Correct!")
+            score += 1
+        else:
+            print(f"❌ Wrong. Correct answer = {correct}")
+
+    print(f"\nYour Score: {score}/{total}")
+    print("Tip: Solve brackets first → then multiplication/division → then addition/subtraction.")
+
+if __name__ == "__main__":
+    practice()

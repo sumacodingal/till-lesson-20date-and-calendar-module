@@ -1,0 +1,15 @@
+#operators are symbols or keywords that perform operations on literals or variables
+#average
+cars=6
+figurines=6
+board_games=7
+balls=9
+books=40
+apps=30
+#sum of total toys
+sum=cars+figurines+board_games+balls+books+apps
+print("The sum of toys is:  ", sum)
+#average of toys
+average=sum/6
+print("The average of toys is:  ", average)
+print(type(balls))

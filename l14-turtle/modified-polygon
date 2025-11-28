@@ -1,0 +1,19 @@
+import turtle
+
+turtle.Screen().bgcolor("pink")
+turtle.Screen().setup(400, 400)
+
+polygon = turtle.Turtle()
+polygon.speed(3)  # Control drawing speed (1-10)
+polygon.color("purple")  # Change pen color
+polygon.pensize(3)  # Make lines thicker
+
+numsides = 6
+sidelength = 70
+angle = 360.0 / numsides
+
+for i in range(numsides):
+    polygon.forward(sidelength)
+    polygon.right(angle)
+
+turtle.done()

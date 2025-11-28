@@ -1,0 +1,19 @@
+import turtle
+
+my_draw = turtle.Screen()
+my_draw.bgcolor("orange")
+my_draw.title("Turtle")
+
+my_pen = turtle.Turtle()
+my_pen.speed(0)  # Fastest speed
+
+size = 5
+
+for _ in range(100):  # Draw 100 squares instead of infinite
+    for i in range(4):  # Draw one square (4 sides)
+        my_pen.fd(size)
+        my_pen.left(90)
+    size = size + 2  # Increase size for next square
+    my_pen.left(10)  # Rotate slightly for spiral effect
+
+turtle.done()  # NOW it's in the right place!

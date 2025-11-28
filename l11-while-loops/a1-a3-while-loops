@@ -1,0 +1,45 @@
+#a1 sum of natural numbers
+n=int(input("Enter a number:"))
+sum=0
+i=1
+while i<=n:
+    sum=sum+i
+    i=i+1
+print("The sum of natural numbers is:",sum)
+
+#a2 infinity loop
+i=8
+while i<=0:
+    print("infinity loop")
+    
+#example2
+i = 0
+while i <= 3:
+    print("infinite")
+    i += 1
+#a3-armstrong number not an activity
+# Program to find all Armstrong numbers between 1 and 1000
+
+for num in range(1, 1001):     # check numbers from 1 to 1000
+    digits = str(num)          # convert number to string to loop through each digit
+    power = len(digits)        # find number of digits
+    total = 0                  # to store sum of powered digits
+    
+    for d in digits:           # loop through each digit
+        total += int(d) ** power   # raise each digit to 'power' and add to total
+    
+    if total == num:           # if the sum equals the original number
+        print(num)
+
+#a3-activity
+#To check whether a number is Armstrong number or not
+'''An Armstrong number (also called a Narcissistic number) is a number that is equal to the sum of its own digits each raised to the power of the number of digits in the number.'''
+num=int(input("Enter a number: "))  
+sum=0  
+temp=num
+while temp>0:  
+    digit=temp%10  
+    sum+=digit**3  
+    temp//=10   
+if num==sum:  
+    print(f"{num} is an Armstrong number")

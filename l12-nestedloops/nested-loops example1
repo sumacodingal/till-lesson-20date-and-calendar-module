@@ -1,0 +1,46 @@
+i=1
+while i<=2:
+    j=1
+    while j<= 2:
+        print(j,end="")
+        j=j+1
+    i=i+1
+    print()
+
+
+x=1
+while x<=2:
+    y=1
+    while y<= 2:
+        print(y,end="*")
+        y=y+1
+    x=x+1
+    print()
+    
+
+    
+m = 1
+while m <= 1:          # Outer loop → number of "big blocks"
+    n = 1
+    while n <= 3:      # Middle loop → rows in each block
+        o = 1
+        while o <= 5:  # Inner loop → columns in each row
+            print("o", end=" ")   # print numbers in same row
+            o = o + 1
+        print()  # move to next row
+        n = n+ 1
+    print()  # space between big blocks
+    m = m + 1
+
+m = 1
+while m <= 3:          # Outer loop → number of "big blocks"
+    n = 1
+    while n <= 3:      # Middle loop → rows in each block
+        o = 1
+        while o <= 3:  # Inner loop → columns in each row
+            print("Q", end=" ")   # print numbers in same row
+            o = o + 1
+        print()  # move to next row
+        n = n+ 1
+    print()  # space between big blocks
+    m = m + 1

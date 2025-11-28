@@ -1,0 +1,56 @@
+#DATA TYPES
+"""Data types tell what kind of data a variable holds — whether it’s a number, text, list, or something else. It describes what kind of value a literal is ?
+Think of it like the label on a box that tells you what’s inside."""
+x = 10         # integer
+y = "Hello"    # string
+z = 3.14       # float
+
+print(type(x))
+print(type(y))
+print(type(z))
+print("Data type of x:", type(x))
+print("Data type of y:", type(y))
+print("Data type of z:", type(z))
+import builtins
+
+all_builtins = dir(builtins)
+print(all_builtins)
+print(len(all_builtins))
+
+
+""" core data_types
+    "Integer": 10,
+    "Float": 3.14,
+    "Complex": 2 + 3j,
+    "String": "Hello, Python!",
+    "Boolean": True,
+    "List": [1, 2, 3],
+    "Tuple": (1, 2, 3),
+    "Set": {1, 2, 3},
+    "Dictionary": {"name": "Suma", "age": 10},"""
+    # type casting
+a = 5          # integer
+b = 2.5        # float
+c = "10"       # string
+print(type(a))
+print(type(b))
+print(type(c))
+#print(a+b+c) will give error
+#converting c which is a string to float or integer to perform addition.
+c_int = int(c)
+c_float = float(c)
+print(a + c_int)      # integer addition
+print(b + c_float)    # float addition
+print(type(c_int))
+print(type(c_float))
+# converting c which is a string to float or integer to perform additi
+print(a+b+c_int)
+print(a+b+c_float)
+i=10.10
+print(int(i))
+print(float(i))
+print(str(i))
+
+print("Enter your name")
+name=input("Enter your name : ")
+print("hello", name, ","," welcome to codingal")

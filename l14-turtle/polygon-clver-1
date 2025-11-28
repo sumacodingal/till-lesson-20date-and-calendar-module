@@ -1,0 +1,15 @@
+import turtle
+
+# Make it visible!
+turtle.pensize(3)           # Thicker lines (try 3-10)
+turtle.pencolor("red")      # Bright, contrasting color
+turtle.speed(1)             # Slowest speed to watch it draw
+
+# Draw a BIGGER polygon
+for i in range(6):          # Hexagon example
+    turtle.forward(100)     # Use 100+ instead of small numbers like 20
+    turtle.left(60)
+
+# Or scale everything up
+side_length = 150           # Much larger
+turtle.forward(side_length)

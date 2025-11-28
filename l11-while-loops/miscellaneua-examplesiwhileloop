@@ -1,0 +1,52 @@
+i = 1
+while i <= 5:
+    print(i)
+    i += 1
+
+count = 0
+while count < 3:
+    print("Hello, Python!")
+    count += 1
+
+name = ""
+while name != "stop":
+    name = input("Enter your name (or type 'stop' to quit): ")
+    print("You entered:", name)
+
+n = 5
+while n > 0:
+    print(n)
+    n -= 1
+print("Blast off!")
+
+i = 0
+while i < 10:
+    i += 1
+    if i % 2 == 0:
+        continue
+    print(i)
+num = 1234
+rev = 0
+while num > 0:
+    digit = num % 10
+    print("digit : ", digit)
+    rev = rev * 10 + digit
+    print("rev : ", rev)
+    num //= 10
+    print("num : ", num)                
+print("Reversed number:", rev)
+
+#login simulation example
+password = "python"
+attempt = ""
+
+while attempt != password:
+    attempt = input("Enter password: ")
+print("Access granted!")
+#example to demonstrate while loop with else
+count = 0       
+while count < 5:
+    print("Count is:", count)
+    count += 1      
+else:
+    print("Counting completed.")

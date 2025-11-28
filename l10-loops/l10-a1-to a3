@@ -1,0 +1,34 @@
+#activity1-sum-of-whole-numbers
+#To calculate the sum of whole numbers from 1 to n
+n=int(input("Enter the sum of numbers you want to calculate: "))
+sum=0
+for i in range(1,n+1):
+    sum=sum+i
+    print("The sum of whole numbers is:",sum)
+    
+#activity 2 reverse a string
+string=input("Enter a string: ")
+reversed_string=""
+for char in string:
+    reversed_string=char+reversed_string
+print("\n The original string is:",string)
+print("The reversed string is:",reversed_string)
+
+
+#activity3reverse order of numbers
+n=int(input("Enter the value of n: "))
+print(f"The numbers from {1} to {n} are:")
+for i in range(n,0,-1):
+    print(i)    
+    
+    
+#activity4# -print-pattern
+#To print the pattern   
+n=int(input("Enter the number of rows: "))
+for i in range(1,n+1):  
+    print("*" * i)  
+    4
+#To print the pattern in reverse order
+n=int(input("Enter the number of rows: "))
+for i in range(n,0,-1):  
+    print("*" * i)      

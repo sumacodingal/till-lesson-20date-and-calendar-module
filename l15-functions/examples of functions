@@ -1,0 +1,31 @@
+def greet(name="guest"):
+    print("hello", name)
+greet("Joy")    
+
+def add(a, b):
+    return(a+b)
+print (add(3,5))
+
+def sub(p,q):
+    return(p-q)
+
+print (sub(9,5))
+
+def wishes():
+    print("welcome")
+    print("how are you?")
+wishes()    
+
+def mul(num1, num2):
+    multiply=num1*num2
+    return multiply
+result = mul(5,9)
+print(result)    
+
+
+
+
+
+
+
+

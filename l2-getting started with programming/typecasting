@@ -1,0 +1,14 @@
+#typecasting is the process of converting a variable from one data type to another data type.
+# for example converting an integer to a string or float to integer etc.
+
+name="Shreedat"
+age=13
+weight=50.2
+is_student=True
+print(name+age+weight+is_student) # will give error as we are trying to concatenate different data types
+# to avoid this error we need to convert all the variables to the same data type
+#method1 converting into string
+print(name + str(age) + str(weight) + str(is_student))
+#method2 converting into string using f string
+print(f"{name} {age} {weight} {is_student}")
+#method3

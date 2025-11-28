@@ -1,0 +1,22 @@
+"""f strings means formatted  string literals. You start the string with a letter f or F, is a special
+ way in Python to insert variables or expressions directly inside a string.""" 
+name="Sonu"
+print(type(name))
+age=10
+weight=30.5
+is_student=True
+print("Hello "+ name + ", you are "+ str(age) + " years old.") # without f string
+
+#I want to print all the variables using typecasting 
+print("Name: " + str(name) + ", Age: " + str(age) + ", Weight: " + str(weight) + ", Is Student: " + str(is_student)) # without f string 
+
+
+
+
+
+
+   
+"""f-strings only help during display/output.
+You still need typecasting when you actually want to change the data type for calculation, storage, or logic."""
+#print(f"Hello {name}, you are {age} years old.") # with f string
+#print(f"Name: {name}, Age: {age}, Weight: {weight}, Is Student: {is_student}") # with f string

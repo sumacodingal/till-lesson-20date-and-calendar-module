@@ -1,0 +1,17 @@
+a=1
+b=2
+c=0
+if a and b and c:
+    print("all variables have a numberic value")
+else:
+    print("at least one variable is either zero or has no value")
+    
+    #example for or operator
+    x=1
+    y=-1
+    z=0
+    if x>0 or y>0:
+        print("both numbers are positive")
+    else:
+        print("at least one number is either negative or zero")
+        

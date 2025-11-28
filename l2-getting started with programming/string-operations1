@@ -1,0 +1,15 @@
+#string operations
+name="codingal"
+print(name.lower())
+print(name.upper())
+print(name.capitalize())
+print(name.replace("codingal", "amazing"))
+print(name.replace("a", "A"))
+print(name.find("al"))
+print(name.join(["Welcome ", " to ", " Codingal"]))
+print(name.find("o"))
+print(name.count("a"))
+print(len(name))
+print(name*3)
+print(__builtins__.dir())
+print(len(__builtins__.__dict__))

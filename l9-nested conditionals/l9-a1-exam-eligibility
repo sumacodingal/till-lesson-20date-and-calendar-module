@@ -1,0 +1,13 @@
+#To check exam eligibility for a student
+# Program to check if student is eligible for exam
+#strip() removes leading and trailing spaces
+fit = input("Are you medically fit to take the exam? (Yes/No): ").strip().lower()
+attendance = float(input("Enter your attendance percentage: "))
+
+if fit == "y":
+    if attendance > 70:
+        print("✅ Student is eligible to take the exam.")
+    else:
+        print("❌ Student is not eligible — attendance below 70%.")
+else:
+    print("❌ Student is not eligible — not medically fit to take the exam.")

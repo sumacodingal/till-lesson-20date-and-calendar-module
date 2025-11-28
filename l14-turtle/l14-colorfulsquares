@@ -1,0 +1,42 @@
+import turtle
+
+my_draw = turtle.Screen()
+my_draw.bgcolor("black")  # Black background looks cool
+my_draw.title("Turtle Spiral")
+
+my_pen = turtle.Turtle()
+my_pen.speed(0)  # Fastest
+my_pen.pensize(2)
+
+colors = ["red", "orange", "yellow", "green", "blue", "purple"]
+size = 10
+
+for i in range(36):  # Draw 36 squares
+    my_pen.color(colors[i % 6])  # Cycle through colors
+    for j in range(4):
+        my_pen.fd(size)
+        my_pen.left(90)
+    size = size + 3  # Grow by 3
+    my_pen.left(10)  # Rotate 10 degrees
+
+turtle.done()
+
+my_draw =import turtle
+
+ turtle.Screen()
+my_draw.bgcolor("orange")
+my_draw.title("Turtle")
+
+my_pen = turtle.Turtle()
+my_pen.speed(0)
+my_pen.color("darkblue")
+my_pen.pensize(2)
+
+size = 5
+
+for i in range(100):
+    my_pen.forward(size)
+    my_pen.left(91)  # Try 90, 91, 92, 121 for different patterns!
+    size = size + 1
+
+turtle.done()

@@ -1,0 +1,28 @@
+def add(p,q):
+    return p+q
+def sub(p,q):
+    return p-q
+def mul(p,q):
+    return p*q
+def div(p,q):
+    return p/q
+
+print("Please select the operation  ")
+print("1. add")
+print("2. subtract")
+print("3. multiply")
+print("4. divide")
+choice=int(input ("please enter your choice 1,2,3,4"))
+p=int(input("Enter the first number:  "))
+q=int(input("Enter the second number:  "))
+if choice==1:
+    print(f"{p}+ {q} = ",add(p,q))
+elif choice==2:
+    print(p, "-",q, "is ", sub(p,q))
+elif choice==3:
+    print(f"{p} * {q} is ", mul(p, q))
+elif choice==4:
+    print(f"{p} / {q} is", div(p, q))   
+else:
+    print("invalid number")            
+    

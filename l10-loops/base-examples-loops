@@ -1,0 +1,57 @@
+print(1)
+print(2)
+
+for i in range (7):
+    print(i)
+    
+#for i in range 5:# this is wrong because there is no parenthesis
+#    print(i)
+for i in range (51,53):#prints 95,96,97 2times and then 52
+     for j in range (95, 98):
+         print(j)
+print(i)          
+
+for i in range (1,3):
+    print("hello")#prints hello 2 times
+    
+for i in range (1,3):
+    print ("gm")
+    i=i+1    
+#loop through list
+fruits = ["apple", "banana", "orange"]
+
+for f in fruits:
+    print(f)
+#print your name 3 times
+for i in range (3):
+    print("suma")    
+    
+'''print a number in reverse
+i=5
+for i in range (3):
+    print(i-1)  '''
+for i in range(5,1,-1):
+    print(i)
+    
+    
+ #print name every alphabet
+      
+#name=input("enter your name?")
+#for i in (name):
+#     print(i)
+#print a list of fruits
+fruits=["banana", "guava", "orange"]
+for i in fruits:
+   # print(fruits)  
+    print(i)   
+'''to print fruits in reverse order
+for fruits in range (1,3,-1):
+    print(i)'''
+for fruits in reversed(fruits):
+    print(fruits)
+#printing in reverse order using slicing method    
+for fruit in fruits[::-1]:
+    print(fruit)
+for fruit in fruits[::-1]:
+    print(fruit[::-1])   # THIS reverses each word
+    

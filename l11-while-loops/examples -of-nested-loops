@@ -1,0 +1,5 @@
+
+for i in range(5):        # Outer loop → rows
+    for j in range(5):    # Inner loop → columns
+        print("*", end="")  # print star, stay on same line
+    print()               # move to next line after each row

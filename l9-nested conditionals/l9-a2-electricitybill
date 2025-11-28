@@ -1,0 +1,32 @@
+"""
+<50 units=2.60, tax=25
+>50<100units=3.25, tax=35
+>100<200 units5.25, tax=45
+>200 units=6.258.45, tax=75
+"""
+units=int(input("Enter the number of units consumed: "))
+if units<=50:
+    cost=units*2.60
+    tax=25
+    total_bill=cost+tax
+    print("The total electricity bill is:", total_bill)
+elif units>50 and units<=100:
+    cost=units*3.25
+    tax=35
+    total_bill=cost+tax
+    print("The total electricity bill is:", total_bill)
+elif units>100 and units<=200:
+    cost=units*5.25
+    tax=45
+    total_bill=cost+tax
+    print("The total electricity bill is:", total_bill)
+elif units>200:
+    cost=units*6.25
+    tax=75
+    total_bill=cost+tax
+    print("The total electricity bill is:", total_bill)
+else:            
+    print("Invalid input")
+
+print("please pay the bill on time to avoid disconnection") 
+    

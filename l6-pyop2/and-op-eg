@@ -1,0 +1,22 @@
+# Example of using 'and' operator in Python note there is no display if aor b is negative
+a=10
+b=-10
+if a>0 and b>0:
+    print("Both numbers are positive.")
+
+#use of or operator
+x=int(input("Enter first number: "))
+y=int(input("Enter second number: "))
+if x>0 and4
+y>0:
+    print("Both numbers are positive.")
+else:
+    print("At least one number is not positive.")
+    
+    #example for not operator
+
+num=int(input("Enter a number: "))
+if not num>0:
+    print("The number is not positive.")
+else:
+    print("The number is positive.")

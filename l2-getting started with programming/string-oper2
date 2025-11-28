@@ -1,0 +1,22 @@
+fname="Sachin"
+lname="Tendulkar"
+fullname=print(fname + " " + lname)
+#fullname = fname + " " + lname
+
+print(fname * 3)
+print(fname[0])   # S
+print(lname[3])   # d
+print(fname[0:3])   # Sac
+print(lname[2:6])   # ndul
+print(fname[-3:])   # hin  (last 3 letters)
+#s=0,a=1,c=2,h=3,i=4,n=5
+print(lname[::-1])   # rakludneT  (reversed string)
+#t=0,e=1,n=2,d=3,u=4,l=5,k=6,a=7,r=8
+print(fullname)
+print(len(fname))   # 6
+print(len(lname))   # 9
+
+print(fname.isalpha())  # True (only letters)
+print(fname.isdigit())  # False
+print(fname.islower())  # False
+print(fname.isupper())  # False

@@ -1,0 +1,16 @@
+#example for nested if statements
+i=13
+if(i==13):
+    if(i<=15):
+        print("i is less than or equal to 15")
+    else:
+        print("i is greater than 15")  
+        
+n=int(input("Enter a number"))
+if n>=0:
+    if n==0:
+        print("The number is 0")
+    else:
+         print("The number is positive")
+else:
+    print("The number is negative")              

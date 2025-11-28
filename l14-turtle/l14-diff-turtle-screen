@@ -1,0 +1,22 @@
+import turtle
+
+# Call Screen() three times WITHOUT saving
+turtle.Screen().bgcolor("pink")
+turtle.Screen().title("Hello")
+turtle.Screen().setup(400, 400)
+
+# Are these the same screen? Let's check!
+screen1 = turtle.Screen()
+screen2 = turtle.Screen()
+screen3 = turtle.Screen()
+
+print(screen1 is screen2)  # True - same object!
+print(screen2 is screen3)  # True - same object!
+print(id(screen1))         # Same memory address
+print(id(screen2))         # Same memory address
+
+**Output:**
+True
+True
+140234567890  # Same ID number!
+140234567890  # Same ID number!

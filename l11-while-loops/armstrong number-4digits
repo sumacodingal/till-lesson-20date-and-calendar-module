@@ -1,0 +1,15 @@
+#153, 370,9474
+num = int(input("Enter a number: "))
+sum = 0
+temp = num
+digits = len(str(num))  # Count total digits
+
+while temp > 0:
+    digit = temp % 10 #extracts last digit using modulo operator
+    sum += digit ** digits  # Use actual digit count
+    temp //= 10 #uses integer division
+
+if num == sum:
+    print(f"{num} is an Armstrong number")
+else:
+    print(f"{num} is NOT an Armstrong number")

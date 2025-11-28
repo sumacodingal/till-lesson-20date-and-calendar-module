@@ -1,0 +1,15 @@
+#a1-well wishes
+def well_wishes():
+    print("Hello")
+    print("how are you:")
+well_wishes()    
+
+#a2-weather conditions
+
+def weather_conditions():
+    print('The weather conditions is plesant in:', spring)
+    print('The weather conditions is same in', autumn)
+    
+spring="autumn"
+autumn=spring
+weather_conditions()    

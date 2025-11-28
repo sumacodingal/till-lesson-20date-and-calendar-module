@@ -1,0 +1,23 @@
+#operators are special symbols that perform specific operations on one, two or more operands and return a result
+# Bitwise left shift operator
+#1-0001
+#2-0010
+#3-0011
+#4-0100
+#5-0101
+#6-0110
+#7-0111
+
+#8-1000
+#9-1001
+#10-1010
+a=5
+b=-10
+print("a<<1=",a<<1) #0101 ->1010 =10
+print("b<<1=",b<<1) #-1010->-10100=-20
+
+# Bitwise right shift operator
+a=5
+b=-10
+print("a>>1=",a>>1) #0101 ->0010 =2
+print("b>>1=",b>>1) #-1010->-0101=-5

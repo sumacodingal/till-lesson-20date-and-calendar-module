@@ -1,0 +1,21 @@
+import turtle
+
+# Create and save the SCREEN
+my_draw = turtle.Screen()  # ← Store in variable!
+my_draw.bgcolor("orange")  # ← Screen has bgcolor
+my_draw.title("Turtle")    # ← Screen has title
+
+# Create the TURTLE
+my_pen = turtle.Turtle()
+my_pen.speed(0)
+my_pen.color("darkblue")
+my_pen.pensize(2)
+
+size = 5
+
+for i in range(100):
+    my_pen.forward(size)
+    my_pen.left(91)
+    size = size + 1
+
+turtle.done()

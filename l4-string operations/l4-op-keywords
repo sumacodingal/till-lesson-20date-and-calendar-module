@@ -1,0 +1,19 @@
+#and, or, not, !=, ==, is, is not are boolean operators in Python and they return boolean values True or False and
+#are also keywords
+a=True
+b=False
+print(a and b)  # False
+print(a or b)   # True
+print(not a)    # False
+print(a != b)   # True
+print(a == b)   # False
+print(a is b)   # False
+print(a is not b) # True
+print(type(a))  # <class 'bool'>
+print(type(b))  # <class 'bool'>
+print(int(a))   # 1
+print(int(b))   # 0
+print(float(a)) # 1.0
+print(float(b)) # 0.0
+print(str(a))   # 'True'
+print(str(b))   # 'False'

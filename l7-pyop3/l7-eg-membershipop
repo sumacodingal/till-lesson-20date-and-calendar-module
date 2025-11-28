@@ -1,0 +1,10 @@
+#example for membership operators using list
+#to checkwhether a sequence is pesent in a object or not
+fruits=["apple","mango", "cherry"]
+print("apple" in fruits)  #True
+print("banana" in fruits) #False
+
+#example for membership operator using string
+str="hello world"
+print("hello" in str)  #True
+print("worlds" in str) #False

@@ -1,0 +1,5 @@
+text=str(input("Enter a string:  "))
+print("The entered string is: ", text)
+print("The length of the string is: ", len(text))
+reversed_text = text[::-1]
+print("The reversed string is: ", reversed_text)

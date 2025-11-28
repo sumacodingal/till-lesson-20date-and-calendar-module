@@ -1,0 +1,34 @@
+#identity operators are used to compare the memory locations of two objects
+#example to demonstrate is operator
+x=5
+if(type(x)) is int:
+    print("x is  an integer")
+else:
+    print("x is not an integer")    
+    
+#eg to demonstrate is not operator
+y="hello"
+if(type(y)) is not int:
+    print("y is not an integer")
+else:
+    print("y is an integer")
+    
+#eg to demonstrate is not
+m=5.0
+if(type(m)) is not float:
+    print ("true")
+else:
+    print("false")
+#id    
+#eg to demonstrate is
+p=10
+q=10
+print(id(p))
+print(id(q))
+if p is q:
+    print("p and q refer to same object")
+q=30
+if p is not q:  
+    print("p and q do not refer to same object, they refer to different objects/identities")
+    print(id(q))
+    print(id(p))

@@ -1,0 +1,13 @@
+actual_cost = float(input("Enter actual cost of the product"))
+sale_price=float(int(input("Enter the sale price of the product")))
+if sale_price > actual_cost:
+    profit=sale_price-actual_cost
+    print("The profit is:", profit)
+elif actual_cost > sale_price:
+    loss=actual_cost - sale_price
+    print("The loss is:", loss)
+else:
+    print("No profit no loss")    
+
+                           
+                           
